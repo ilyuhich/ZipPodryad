@@ -3,10 +3,18 @@ from django.db import models
 
 # Create your models here.
 
+# Модель 'Хранилище' - что хранится и на каком складе
+
+class Warehouse(models.Model):
+    storage = models.ForeignKey('Storage', on_delete=models.PROTECT)
+    good = models.ForeignKey('Good', on_delete=models.PROTECT, null=True)
+    remains = models.PositiveSmallIntegerField(verbose_name='Остаток', default=0)
+
 # модель СКЛАД - хранятся только названия склад. Добавить склад ПР/НРД
 class Storage(models.Model):
     storage_name = models.CharField(max_length=10, verbose_name='Подрядчик')
-    storage_good = models.ForeignKey('Good', on_delete=models.PROTECT, null=True)
+    storage_description = models.CharField(max_length=150, verbose_name='Описание', null=True)
+    goods_name = models.ForeignKey('Good', on_delete=models.PROTECT, null=True)
     good_min_remains = models.PositiveSmallIntegerField(verbose_name='Мин. Остаток', default=0)
     good_now_remain = models.PositiveSmallIntegerField(verbose_name='Остаток', default=0)
 
