@@ -4,19 +4,26 @@ from django.db import models
 # Create your models here.
 
 # Модель 'Хранилище' - что хранится и на каком складе
-
 class Warehouse(models.Model):
     storage = models.ForeignKey('Storage', on_delete=models.PROTECT)
     good = models.ForeignKey('Good', on_delete=models.PROTECT, null=True)
     remains = models.PositiveSmallIntegerField(verbose_name='Остаток', default=0)
+    good_min_remains = models.PositiveSmallIntegerField(verbose_name='Мин. Остаток', default=0)
 
-# модель СКЛАД - хранятся только названия склад. Добавить склад ПР/НРД
+    class Meta:
+        verbose_name_plural = "Хранилища (склад+товар)"
+        verbose_name = "Хранилище"
+        ordering = ['-storage']
+
+    def __str__(self):
+        return str(self.storage) + ' ' + str(self.pk)
+
+
+# модель СКЛАД - хранятся только названия склада. Добавить склад ПР/НРД
 class Storage(models.Model):
     storage_name = models.CharField(max_length=10, verbose_name='Подрядчик')
-    storage_description = models.CharField(max_length=150, verbose_name='Описание', null=True)
-    goods_name = models.ForeignKey('Good', on_delete=models.PROTECT, null=True)
-    good_min_remains = models.PositiveSmallIntegerField(verbose_name='Мин. Остаток', default=0)
-    good_now_remain = models.PositiveSmallIntegerField(verbose_name='Остаток', default=0)
+    storage_description = models.CharField(max_length=150, verbose_name='Описание', default='Добавьте описание')
+    # goods_name = models.ForeignKey('Good', on_delete=models.PROTECT, null=True)
 
     class Meta:
         verbose_name_plural = "Склады"
@@ -27,12 +34,13 @@ class Storage(models.Model):
         return self.storage_name
 
 
-#  создаем модель ТМЦ на складе
+#  создаем модель товаров на складе
 class Good(models.Model):
     goods_name = models.CharField(max_length=70, verbose_name='Наименование')
-# остатки должны быть привязаны не к товару, а к складу
-#    goods_min_remains = models.PositiveSmallIntegerField(verbose_name='Мин. Остаток')
-#    goods_now_remain = models.PositiveSmallIntegerField(verbose_name='Остаток')
+
+    # остатки должны быть привязаны не к товару, а к складу
+    #    goods_min_remains = models.PositiveSmallIntegerField(verbose_name='Мин. Остаток')
+    #    goods_now_remain = models.PositiveSmallIntegerField(verbose_name='Остаток')
 
     class Meta:
         verbose_name_plural = "Товары"
