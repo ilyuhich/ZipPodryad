@@ -16,7 +16,7 @@ class Warehouse(models.Model):
         ordering = ['-storage']
 
     def __str__(self):
-        return str(self.storage) + ' ' + str(self.pk)
+        return str(self.storage) + ' - ' + str(self.good) + ', мин. остаток ' + str(self.good_min_remains)
 
 
 # модель СКЛАД - хранятся только названия склада. Добавить склад ПР/НРД
@@ -36,7 +36,8 @@ class Storage(models.Model):
 
 #  создаем модель товаров на складе
 class Good(models.Model):
-    goods_name = models.CharField(max_length=70, verbose_name='Наименование')
+    goods_name = models.CharField(max_length=70, verbose_name='Наименование', unique=True)
+    # наименование должно быть уникальным
 
     # остатки должны быть привязаны не к товару, а к складу
     #    goods_min_remains = models.PositiveSmallIntegerField(verbose_name='Мин. Остаток')

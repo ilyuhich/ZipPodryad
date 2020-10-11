@@ -3,3 +3,6 @@
             have no any pages to show information
             main app is 'ziponline'
     1. now will write main template and first page - it will show me menu and information about last moving
+    2. have create first view with warehouse listing and change models. now will create templates
+        having a problem with output stor.storage name in template by_storage
+        the mistake was that I forget to use {{}}

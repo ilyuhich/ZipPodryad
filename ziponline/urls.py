@@ -4,8 +4,9 @@
 
 
 from django.urls import path
-from . import views
+from .views import index, by_storage
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', index, name='index'),
+    path('<int:storage_id>/', by_storage, name='by_storage'),
 ]

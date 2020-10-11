@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Остатки ЗИП на складе {{ current_storage.storage_name }}</title>
+</head>
+<body>
+    <div>
+        <a href="{% url 'index' %}">Главная</a>
+        {% for stor in storages %}
+            <a href="{% url 'by_storage' stor.pk %}">{{ stor.storage_name }}</a>
+        {% endfor %}
+    </div>
+    <h2> Остатки на складе </h2>
+    <h2> Выбранный склад: {{ current_storage.storage_name }}</h2>
+    <h2> Номер склада: {{ current_storage.pk }}</h2>
+    <table border="2">
+        <th>Арт.</th>
+        <th>Наименование</th>
+        <th>Кол-во</th>
+        {% for wh in warehouses %}
+
+            <tr>
+                <td align="center"> {{ wh.pk }}</td>
+                <td align="center"> {{ wh.good }}</td>
+                <td align="center"> {{ wh.remains }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
