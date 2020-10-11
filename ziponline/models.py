@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.utils.timezone import now
 
 # Create your models here.
 
@@ -52,6 +52,7 @@ class Good(models.Model):
         return self.goods_name
 
 
+
 #  модель Транзакция - может либо между складами либо расход
 class Moving(models.Model):
     Moving_type = models.CharField(max_length=12, verbose_name='Тип движения',
@@ -73,7 +74,7 @@ class Moving(models.Model):
                                 verbose_name='Куда')  # если под ПР/НРД указываем этот склад
     move_task = models.CharField(max_length=12,
                                  verbose_name='Задача')  # если перемещаем под ПР/НРД указываем номер
-    move_date = models.DateTimeField(verbose_name='Дата добавления')
+    move_date = models.DateTimeField(verbose_name='Дата добавления', default=now)
 
     class Meta:
         verbose_name_plural = "Движения"

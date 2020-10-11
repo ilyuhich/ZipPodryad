@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная - склады</title>
-</head>
-<body>
+{% extends 'layout/basic.html' %}
+
+{% block content %}
     <h2>Склады и описание</h2>
         {% for stor in storage %}
             <div>
@@ -12,5 +8,4 @@
                     <p> {{ stor.storage_description }} </p>
             </div>
         {% endfor %}
-</body>
-</html>
+{% endblock %}

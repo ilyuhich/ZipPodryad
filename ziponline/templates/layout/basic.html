@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'ziponline/style.css' %}">
+    <title>{% block title %}Главная{% endblock %} - учёт ЗИП</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'index' %}">Главная</a>
+        <a href="{% url 'mv_create' %}">Добавить перемещение</a>
+        {% for stor in storages %}
+            <a href="{% url 'by_storage' stor.pk %}">{{ stor.storage_name }}</a>
+        {% endfor %}
+    </nav>
+    <section>
+        {% block content %}
+        {% endblock %}
+    </section>
+</body>
+</html>

@@ -6,3 +6,5 @@
     2. have create first view with warehouse listing and change models. now will create templates
         having a problem with output stor.storage name in template by_storage
         the mistake was that I forget to use {{}}
+
+    3. add templates and moving create form? add base layout

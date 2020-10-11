@@ -4,9 +4,10 @@
 
 
 from django.urls import path
-from .views import index, by_storage
+from .views import index, by_storage, MvCreateView
 
 urlpatterns = [
     path('', index, name='index'),
     path('<int:storage_id>/', by_storage, name='by_storage'),
+    path('add/', MvCreateView.as_view(), name='mv_create'),
 ]

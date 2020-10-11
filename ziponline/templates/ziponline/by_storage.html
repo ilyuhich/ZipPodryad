@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Остатки ЗИП на складе {{ current_storage.storage_name }}</title>
-</head>
-<body>
-    <div>
-        <a href="{% url 'index' %}">Главная</a>
-        {% for stor in storages %}
-            <a href="{% url 'by_storage' stor.pk %}">{{ stor.storage_name }}</a>
-        {% endfor %}
-    </div>
+{% extends 'layout/basic.html' %}
+
+{% block title %}Остатки{% endblock %}
+
+{% block content %}
     <h2> Остатки на складе </h2>
     <h2> Выбранный склад: {{ current_storage.storage_name }}</h2>
     <h2> Номер склада: {{ current_storage.pk }}</h2>
@@ -27,5 +19,4 @@
             </tr>
         {% endfor %}
     </table>
-</body>
-</html>
+{% endblock %}
