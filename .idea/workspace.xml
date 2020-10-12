@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf0e25d8-e1c1-4aa5-9fc4-b604fce8dd92" name="Default Changelist" comment="перед большим теоретическим материалом." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/ilyuhich/ZipPodryad.git" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ihgolOad3djNnNWymFlhySZ4Ht" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ziponline/templates/ziponline" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ziponline/templates/ziponline" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ziponline" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/ziponline/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ZipPodryad" type="Python.DjangoServer" factoryName="Django server">
+      <module name="ZipPodryad" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf0e25d8-e1c1-4aa5-9fc4-b604fce8dd92" name="Default Changelist" comment="" />
+      <created>1602365414248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602365414248</updated>
+      <workItem from="1602365447600" duration="232000" />
+      <workItem from="1602365709758" duration="26035000" />
+      <workItem from="1602464557546" duration="377000" />
+    </task>
+    <task id="LOCAL-00001" summary="отредактировал модель: добавил новую сводную таблицу 'хранилище', сделал первую вьюху">
+      <created>1602369136184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602369136184</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Отредактировал модели еще раз.&#10;Теперь склады и товары хранят только наименования.&#10;Остальное в сводной таблице.">
+      <created>1602370922489</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602370922489</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Сделал первичное меню,&#10;вывод данных со склада в виде таблицы простой,&#10;разобрался с формированием ссылок">
+      <created>1602381722483</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602381722483</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Сделал первичное меню,&#10;вывод данных со склада в виде таблицы простой,&#10;разобрался с формированием ссылок">
+      <created>1602460260746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602460260746</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add venv to repo">
+      <created>1602464597563</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602464597563</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add venv to repo">
+      <created>1602464878817</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602464878817</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="отредактировал модель: добавил новую сводную таблицу 'хранилище', сделал первую вьюху" />
+    <MESSAGE value="Отредактировал модели еще раз.&#10;Теперь склады и товары хранят только наименования.&#10;Остальное в сводной таблице." />
+    <MESSAGE value="Сделал первичное меню,&#10;вывод данных со склада в виде таблицы простой,&#10;разобрался с формированием ссылок" />
+    <MESSAGE value="add venv to repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add venv to repo" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="383" y="196" width="589" height="409" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602366103959">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="383" y="196" width="589" height="409" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1602366103959" />
+    <state x="481" y="299" width="403" height="204" key="Github.CreateGistDialog" timestamp="1602464252858">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="481" y="299" width="403" height="204" key="Github.CreateGistDialog/0.27.1366.741@0.27.1366.741" timestamp="1602464252858" />
+    <state x="541" y="297" width="283" height="208" key="Github.ShareDialog" timestamp="1602365924658">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="541" y="297" width="283" height="208" key="Github.ShareDialog/0.27.1366.741@0.27.1366.741" timestamp="1602365924658" />
+    <state x="462" y="56" width="432" height="690" key="Github.UntrackedFilesDialog" timestamp="1602366001733">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="462" y="56" width="432" height="690" key="Github.UntrackedFilesDialog/0.27.1366.741@0.27.1366.741" timestamp="1602366001733" />
+    <state width="902" height="171" key="GridCell.Tab.0.bottom" timestamp="1602378299207">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="902" height="171" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1602378299207" />
+    <state width="902" height="171" key="GridCell.Tab.0.center" timestamp="1602378299206">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="902" height="171" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1602378299206" />
+    <state width="902" height="171" key="GridCell.Tab.0.left" timestamp="1602378299205">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="902" height="171" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1602378299205" />
+    <state width="902" height="171" key="GridCell.Tab.0.right" timestamp="1602378299206">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="902" height="171" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602378299206" />
+    <state x="179" y="31" width="1007" height="737" key="SettingsEditor" timestamp="1602369316164">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="179" y="31" width="1007" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1602369316164" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602464615363">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602464615363" />
+    <state x="467" y="94" width="422" height="614" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1602464667611">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="467" y="94" width="422" height="614" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.27.1366.741@0.27.1366.741" timestamp="1602464667611" />
+    <state x="372" y="182" width="611" height="438" key="git4idea.merge.GitPullDialog" timestamp="1602460418677">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="372" y="182" width="611" height="438" key="git4idea.merge.GitPullDialog/0.27.1366.741@0.27.1366.741" timestamp="1602460418677" />
+  </component>
+</project>
