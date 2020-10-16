@@ -5,18 +5,38 @@
 {% block content %}
     <h2> Остатки на всех складах на текущую дату</h2>
     <h3>  {{ current.date }}</h3>
-    <table border="1" width="100%">
-        <th width="5%">Арт.</th><th width="55%">Наименование</th>
-        <th width="10%">Ария</th><th width="10%">Базис+</th><th width="10%">АиЮ</th><th width="10%">СТАРТ</th>
-        {% for skl in skl_ordered_by_goods %}
-            <tr>
-                <td align="center">{{ skl.good.pk }}</td>
-                <td align="left">{{ skl.good.goods_name }}</td>
-                <td align="center">{{ skl.sklA_num }}</td>
-                <td align="center">{{ skl.sklB_num }}</td>
-                <td align="center">{{ skl.sklAU_num_min }}</td>
-                <td align="center">{{ skl.sklSt_num }} </td>
-            </tr>
-        {% endfor %}
+    <table border="1" width="100%" cellpadding="4" cellspacing="0">
+        <tr>
+            <th width="5%" rowspan="2">Арт.</th>
+            <th width="%" rowspan="2">Наименование</th>
+            <td colspan="4" align="center"> На складе по актам</td>
+            <td colspan="4" align="center"> На складе по накладным</td>
+        </tr>
+        <tr>
+            <th width="8%">Ария</th>
+            <th width="8%">Базис+</th>
+            <th width="8%">АиЮ</th>
+            <th width="8%">СТАРТ</th>
+            <th width="8%">Ария</th>
+            <th width="8%">Базис+</th>
+            <th width="8%">АиЮ</th>
+            <th width="8%">СТАРТ</th>
+        </tr>
+            {% for skl in skl_ordered_by_goods %}
+                <tr>
+                    <td align="center">{{ skl.good.pk }}</td>
+                    <td align="left">{{ skl.good.goods_name }}</td>
+                    <td align="center">{{ skl.sklA_num }}</td>
+                    <td align="center">{{ skl.sklB_num }}</td>
+                    <td align="center">{{ skl.sklAU_num }}</td>
+                    <td align="center">{{ skl.sklSt_num }} </td>
+                    <td align="center">{{ skl.sklA_num_app }}</td>
+                    <td align="center">{{ skl.sklB_num_app }}</td>
+                    <td align="center">{{ skl.sklAU_num_app }}</td>
+                    <td align="center">{{ skl.sklSt_num_app }} </td>
+                </tr>
+            {% endfor %}
+
+
     </table>
 {% endblock %}
