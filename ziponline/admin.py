@@ -8,4 +8,4 @@ from .models import *
 admin.site.register(Storage)
 admin.site.register(Good)
 admin.site.register(Moving)
-admin.site.register(Warehouse)
+admin.site.register(Sklad)

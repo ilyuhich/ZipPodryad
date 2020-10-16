@@ -8,3 +8,10 @@
         the mistake was that I forget to use {{}}
 
     3. add templates and moving create form? add base layout
+    4. after a long thinking i have decided that i need to reconfigure my code
+    and my models in another way: all information will store in one main table WH
+    Now i try to make the right step-by-step plan and discover some questions:
+        - how i'll manage view of different storages
+        - how i'll add information about transactions
+        - and i want to have a transactions journal
+        I decided to make new project :(

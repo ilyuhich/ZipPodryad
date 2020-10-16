@@ -1,28 +1,38 @@
 from django.db import models
 from django.utils.timezone import now
 
+
 # Create your models here.
 
-# Модель 'Хранилище' - что хранится и на каком складе
-class Warehouse(models.Model):
-    storage = models.ForeignKey('Storage', on_delete=models.PROTECT)
-    good = models.ForeignKey('Good', on_delete=models.PROTECT, null=True)
-    remains = models.PositiveSmallIntegerField(verbose_name='Остаток', default=0)
-    good_min_remains = models.PositiveSmallIntegerField(verbose_name='Мин. Остаток', default=0)
+class Sklad(models.Model):
+    good = models.ForeignKey('Good', on_delete=models.PROTECT)
+    sklA_num = models.PositiveSmallIntegerField(verbose_name='Ария', default=0)
+    sklA_num_app = models.PositiveSmallIntegerField(verbose_name='Ария по актам', default=0)
+    sklA_num_min = models.PositiveSmallIntegerField(verbose_name='Ария мин.', default=0)
+    sklB_num = models.PositiveSmallIntegerField(verbose_name='Б+', default=0)
+    sklB_num_app = models.PositiveSmallIntegerField(verbose_name='Базис+ по актам', default=0)
+    sklB_num_min = models.PositiveSmallIntegerField(verbose_name='Б+ мин.', default=0)
+    skaAU_num = models.PositiveSmallIntegerField(verbose_name='АиЮ', default=0)
+    sklAU_num_app = models.PositiveSmallIntegerField(verbose_name='АиЮ по актам', default=0)
+    sklAU_num_min = models.PositiveSmallIntegerField(verbose_name='АиЮ мин.', default=0)
+    sklSt_num = models.PositiveSmallIntegerField(verbose_name='Старт', default=0)
+    sklSt_num_app = models.PositiveSmallIntegerField(verbose_name='Старт по актам', default=0)
+    sklSt_num_min = models.PositiveSmallIntegerField(verbose_name='Старт мин.', default=0)
 
     class Meta:
-        verbose_name_plural = "Хранилища (склад+товар)"
-        verbose_name = "Хранилище"
-        ordering = ['-storage']
+        verbose_name_plural = "Товары на складах"
+        verbose_name = "Товар на складах"
+        ordering = ['-good']
 
     def __str__(self):
-        return str(self.storage) + ' - ' + str(self.good) + ', мин. остаток ' + str(self.good_min_remains)
+        return str(self.good)
 
 
 # модель СКЛАД - хранятся только названия склада. Добавить склад ПР/НРД
 class Storage(models.Model):
     storage_name = models.CharField(max_length=10, verbose_name='Подрядчик')
     storage_description = models.CharField(max_length=150, verbose_name='Описание', default='Добавьте описание')
+
     # goods_name = models.ForeignKey('Good', on_delete=models.PROTECT, null=True)
 
     class Meta:
@@ -31,17 +41,12 @@ class Storage(models.Model):
         ordering = ['-storage_name']
 
     def __str__(self):
-        return self.storage_name
+        return str(self.storage_name)
 
 
 #  создаем модель товаров на складе
 class Good(models.Model):
     goods_name = models.CharField(max_length=70, verbose_name='Наименование', unique=True)
-    # наименование должно быть уникальным
-
-    # остатки должны быть привязаны не к товару, а к складу
-    #    goods_min_remains = models.PositiveSmallIntegerField(verbose_name='Мин. Остаток')
-    #    goods_now_remain = models.PositiveSmallIntegerField(verbose_name='Остаток')
 
     class Meta:
         verbose_name_plural = "Товары"
@@ -49,8 +54,7 @@ class Good(models.Model):
         ordering = ['-goods_name']
 
     def __str__(self):
-        return self.goods_name
-
+        return str(self.goods_name)
 
 
 #  модель Транзакция - может либо между складами либо расход
@@ -79,7 +83,6 @@ class Moving(models.Model):
     class Meta:
         verbose_name_plural = "Движения"
         verbose_name = "Движение"
-
         ordering = ['-pk']
 
     def __str__(self):

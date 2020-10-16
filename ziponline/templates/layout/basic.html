@@ -10,6 +10,7 @@
 <body>
     <nav>
         <a href="{% url 'index' %}">Главная</a>
+
         <a href="{% url 'mv_create' %}">Добавить перемещение</a>
         {% for stor in storages %}
             <a href="{% url 'by_storage' stor.pk %}">{{ stor.storage_name }}</a>

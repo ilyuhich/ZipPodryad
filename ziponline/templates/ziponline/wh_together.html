@@ -1,0 +1,23 @@
+{% extends 'layout/basic.html' %}
+
+{% block title %}Остатки общие{% endblock %}
+
+{% block content %}
+    <h2> Остатки на всех складах на текущую дату</h2>
+    <h3>  {{ current.date }}</h3>
+    <table border="1">
+        <th>Арт.</th>
+        <th>Наименование</th>
+        {% for stor in stor_all %}
+        <th> {{ stor }}</th>
+        {% endfor %}
+
+        {% for good in goods %}
+            <tr>
+                <td align="center"> {{ good.pk }}</td>
+                <td align="center"> {{ good.goods_name }}</td>
+                <td align="center"> {{ wh1.remains }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
