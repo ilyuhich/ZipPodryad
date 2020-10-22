@@ -19,7 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0e25d8-e1c1-4aa5-9fc4-b604fce8dd92" name="Default Changelist" comment="перед большим теоретическим материалом." />
+    <list default="true" id="bf0e25d8-e1c1-4aa5-9fc4-b604fce8dd92" name="Default Changelist" comment="перед большим теоретическим материалом.">
+      <change beforePath="$PROJECT_DIR$/.idea/ZipPodryad.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ZipPodryad.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ilya.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ilya.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ziponline/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ziponline/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ziponline/templates/layout/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/ziponline/templates/layout/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ziponline/templates/ziponline/by_storage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ziponline/templates/ziponline/by_storage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ziponline/templates/ziponline/skl_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/ziponline/templates/ziponline/skl_all.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +133,8 @@
       <workItem from="1602464557546" duration="7443000" />
       <workItem from="1602528229670" duration="3661000" />
       <workItem from="1602625205950" duration="6865000" />
-      <workItem from="1602872168158" duration="192000" />
+      <workItem from="1602844700100" duration="1547000" />
+      <workItem from="1602846294687" duration="3432000" />
     </task>
     <task id="LOCAL-00001" summary="отредактировал модель: добавил новую сводную таблицу 'хранилище', сделал первую вьюху">
       <created>1602369136184</created>
@@ -180,14 +192,7 @@
       <option name="project" value="LOCAL" />
       <updated>1602465215444</updated>
     </task>
-    <task id="LOCAL-00009" summary="перед большим теоретическим материалом.">
-      <created>1602872201008</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1602872201008</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,10 +215,13 @@
     <MESSAGE value="Отредактировал модели еще раз.&#10;Теперь склады и товары хранят только наименования.&#10;Остальное в сводной таблице." />
     <MESSAGE value="Сделал первичное меню,&#10;вывод данных со склада в виде таблицы простой,&#10;разобрался с формированием ссылок" />
     <MESSAGE value="add venv to repo" />
-    <MESSAGE value="перед большим теоретическим материалом." />
-    <option name="LAST_COMMIT_MESSAGE" value="перед большим теоретическим материалом." />
+    <option name="LAST_COMMIT_MESSAGE" value="add venv to repo" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1368" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602846908186">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602846908186" />
     <state x="383" y="196" width="589" height="409" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602366103959">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -250,26 +258,27 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="902" height="171" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602378299206" />
-    <state width="259" height="542" key="HiddenNamespacesPopup" timestamp="1602475564221">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="365" height="761" key="HiddenNamespacesPopup" timestamp="1602846444385">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="365" height="761" key="HiddenNamespacesPopup/0.0.1440.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602846444385" />
     <state width="259" height="542" key="HiddenNamespacesPopup/0.27.1366.741@0.27.1366.741" timestamp="1602475564221" />
     <state x="179" y="31" width="1007" height="737" key="SettingsEditor" timestamp="1602369316164">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="179" y="31" width="1007" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1602369316164" />
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602872210625">
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602465469839">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602872210625" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602465469839" />
+    <state x="-1164" y="340" width="407" height="356" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1602849423046">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1164" y="340" width="407" height="356" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1440.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602849423046" />
     <state x="467" y="94" width="422" height="614" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1602465144027">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="467" y="94" width="422" height="614" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.27.1366.741@0.27.1366.741" timestamp="1602465144027" />
-    <state x="464" y="310" width="428" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603399097744">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="464" y="310" width="428" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1603399097744" />
     <state x="372" y="182" width="611" height="438" key="git4idea.merge.GitPullDialog" timestamp="1602460418677">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

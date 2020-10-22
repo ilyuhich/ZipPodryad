@@ -12,7 +12,7 @@ class Sklad(models.Model):
     sklB_num = models.PositiveSmallIntegerField(verbose_name='Б+', default=0)
     sklB_num_app = models.PositiveSmallIntegerField(verbose_name='Базис+ по актам', default=0)
     sklB_num_min = models.PositiveSmallIntegerField(verbose_name='Б+ мин.', default=0)
-    skaAU_num = models.PositiveSmallIntegerField(verbose_name='АиЮ', default=0)
+    sklAU_num = models.PositiveSmallIntegerField(verbose_name='АиЮ', default=0)
     sklAU_num_app = models.PositiveSmallIntegerField(verbose_name='АиЮ по актам', default=0)
     sklAU_num_min = models.PositiveSmallIntegerField(verbose_name='АиЮ мин.', default=0)
     sklSt_num = models.PositiveSmallIntegerField(verbose_name='Старт', default=0)
