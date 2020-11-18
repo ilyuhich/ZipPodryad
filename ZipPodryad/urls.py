@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from .views import MainView
 
 urlpatterns = [
+    path('', MainView.as_view(), name='main_page'),
     path('admin/', admin.site.urls),
     path('ziponline/', include('ziponline.urls')),
+    path('tmc/', include('TMConline.urls')),
+    path('pr/', include('pr_online.urls'))
 ]

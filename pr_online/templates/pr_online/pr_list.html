@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <h4>PR view</h4>
+        <ul>
+        {% for pr in object_list %}
+            <li> {{ pr.pr_num }} - {{ pr.pr_text }}</li>
+        {% endfor %}
+        </ul>
+</body>
+</html>

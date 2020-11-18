@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Список приложений:</h2>
+    <ul>
+        <li><a href="{% url 'main_page' %}">Главная</a></li>
+        <li><a href="{% url 'index' %}">ziponline</a> </li>
+        <li><a href="{% url 'PRView' %}">pr_online</a> </li>
+    path('admin/', admin.site.urls),
+    path('ziponline/', include('ziponline.urls')),
+    path('tmc/', include('TMConline.urls')),
+    path('pr/', include('pr_online.urls'))
+    </ul>
+</body>
+</html>
